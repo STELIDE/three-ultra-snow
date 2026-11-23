@@ -12,7 +12,7 @@ This is the "Ultra" graphics tier of **설원경**, a browser ski game ([ski.ste
 
 | Plain three.js | Ultra, midday | Ultra, low sun |
 | --- | --- | --- |
-| ![plain](docs/plain.jpg) | ![midday](docs/midday.jpg) | ![low sun](docs/low-sun.jpg) |
+| ![plain](https://raw.githubusercontent.com/STELIDE/three-ultra-snow/main/docs/plain.jpg) | ![midday](https://raw.githubusercontent.com/STELIDE/three-ultra-snow/main/docs/midday.jpg) | ![low sun](https://raw.githubusercontent.com/STELIDE/three-ultra-snow/main/docs/low-sun.jpg) |
 
 **Live demo: [stelide.github.io/three-ultra-snow/demo/](https://stelide.github.io/three-ultra-snow/demo/)**. Each effect can be switched off in the panel to compare. Drag to orbit, scroll to zoom. To run it locally, serve the repository from any static server (`python3 -m http.server`) and open `/demo/`.
 
@@ -29,7 +29,20 @@ This is the "Ultra" graphics tier of **설원경**, a browser ski game ([ski.ste
 
 ## Usage
 
-> **Not on npm yet.** Copy the `src/` folder into your project and import from it (for example `./three-ultra-snow/src/index.js`), or point an import map at this repository. The examples below use the package name `three-ultra-snow` for readability. Replace it with your own path.
+```bash
+npm install three-ultra-snow three@0.187
+```
+
+Or without a bundler, use an import map:
+
+```html
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three-ultra-snow": "https://cdn.jsdelivr.net/npm/three-ultra-snow@0.1.0/src/index.js"
+} }
+</script>
+```
 
 ```js
 import * as THREE from 'three';
@@ -89,7 +102,7 @@ Notes:
 
 데모: [stelide.github.io/three-ultra-snow/demo/](https://stelide.github.io/three-ultra-snow/demo/)
 
-아직 npm에는 올리지 않았습니다. `src/` 폴더를 프로젝트에 복사해서 쓰세요.
+설치: `npm install three-ultra-snow three@0.187`
 
 도움이 됐다면 저장소에 ⭐ 스타를 눌러 주세요.
 

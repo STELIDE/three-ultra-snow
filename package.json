@@ -4,11 +4,15 @@
   "description": "Snow, sun shadows, window glass and HDR bloom for large outdoor three.js scenes. The Ultra graphics tier of a browser ski game.",
   "type": "module",
   "main": "src/index.js",
+  "module": "src/index.js",
   "exports": { ".": "./src/index.js" },
   "files": ["src", "LICENSE", "README.md"],
   "sideEffects": false,
   "peerDependencies": { "three": "0.187.x" },
   "keywords": ["three", "threejs", "webgl", "snow", "shadows", "bloom", "shader", "terrain"],
+  "homepage": "https://stelide.github.io/three-ultra-snow/demo/",
+  "repository": { "type": "git", "url": "git+https://github.com/STELIDE/three-ultra-snow.git" },
+  "bugs": { "url": "https://github.com/STELIDE/three-ultra-snow/issues" },
   "license": "MIT",
   "author": "STELIDE"
 }
