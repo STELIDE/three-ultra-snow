@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>three-ultra-snow demo</title>
+<style>
+  :root { --ink: #10151f; --paper: rgba(250, 251, 253, .88); --line: rgba(16, 21, 31, .14); }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e8ecf3; --paper: rgba(16, 20, 28, .82); --line: rgba(232, 236, 243, .16); } }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #cfe0f0; font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+  #ui { position: fixed; top: 12px; left: 12px; max-width: calc(100vw - 24px); box-sizing: border-box; padding: 10px 12px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; backdrop-filter: blur(8px); }
+  #ui h1 { margin: 0 0 6px; font-size: 13px; font-weight: 600; }
+  #fx label { display: block; padding: 2px 0; cursor: pointer; }
+  #row { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+  button { font: inherit; color: inherit; background: transparent; border: 1px solid var(--line); border-radius: 4px; padding: 3px 8px; cursor: pointer; }
+  #fps { margin-left: auto; font-variant-numeric: tabular-nums; opacity: .7; }
+  body.shot #ui { display: none; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="ui">
+  <h1>three-ultra-snow</h1>
+  <div id="fx"></div>
+  <div id="row"><button id="sun" type="button">Low sun</button><span id="fps"></span></div>
+</div>
+<script>if (location.search.includes('shot')) document.body.classList.add('shot');</script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
