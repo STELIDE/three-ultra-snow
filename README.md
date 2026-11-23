@@ -14,7 +14,7 @@ This is the "Ultra" graphics tier of **설원경**, a browser ski game ([ski.ste
 | --- | --- | --- |
 | ![plain](docs/plain.jpg) | ![midday](docs/midday.jpg) | ![low sun](docs/low-sun.jpg) |
 
-**Demo:** open `demo/index.html` from any static server (`python3 -m http.server`, then `/demo/`). Each effect can be switched off in the panel to compare.
+**Live demo: [stelide.github.io/three-ultra-snow/demo/](https://stelide.github.io/three-ultra-snow/demo/)**. Each effect can be switched off in the panel to compare. Drag to orbit, scroll to zoom. To run it locally, serve the repository from any static server (`python3 -m http.server`) and open `/demo/`.
 
 ## What's inside
 
@@ -86,6 +86,8 @@ Notes:
 - **눈 셰이딩:** 윤기, 3cm 칸 반짝임, 푸른 그늘, 비스듬한 면의 프레넬을 더합니다.
 - **유리창:** 벽 그림 속 파란 칸을 셰이더가 찾아 하늘을 비춥니다.
 - **HDR 블룸 후처리:** 장면을 HDR로 그린 뒤 블룸, 톤 매핑, 대비 보정을 합니다.
+
+데모: [stelide.github.io/three-ultra-snow/demo/](https://stelide.github.io/three-ultra-snow/demo/)
 
 아직 npm에는 올리지 않았습니다. `src/` 폴더를 프로젝트에 복사해서 쓰세요.
 
